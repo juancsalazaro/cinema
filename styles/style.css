@@ -1,9 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Anta&family=Poppins:wght@300&display=swap");
+
 body {
   --tw-bg-opacity: 1;
   background-color: rgb(31 33 34 / var(--tw-bg-opacity)) !important;
   overflow-x: hidden;
   margin: 0;
   line-height: inherit;
+}
+
+h1 {
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+button {
+  font-family: "Anta", sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
 }
 
 .background {
@@ -33,10 +47,59 @@ body {
   border: none;
   padding: 0px 10px;
   margin-left: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  transform: scale(1.1);
 }
 
 .font-weight {
   font-weight: 500 !important;
+}
+
+button {
+  background: #6ef96ecc;
+  color: #fff;
+  border: none;
+  position: relative;
+  height: 60px;
+  font-size: 1.6em;
+  padding: 0 2em;
+  cursor: pointer;
+  transition: 800ms ease all;
+  outline: none;
+}
+button:hover {
+  color: #6ef96ecc;
+}
+button:before,
+button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #6ef96ecc;
+  transition: 400ms ease all;
+  border-radius: 0.375rem;
+}
+button:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+button:hover:before,
+button:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+}
+
+a {
+  text-decoration: none !important;
+  color: rgb(30 30 30 / var(--tw-text-opacity)) !important;
 }
 
 @keyframes animate {
