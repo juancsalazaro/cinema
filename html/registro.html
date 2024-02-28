@@ -3,8 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ejercicio #1</title>
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <title>Cinema - Registro</title>
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -13,80 +18,44 @@
     />
   </head>
   <body>
-    <header
-      class="container d-flex flex-column align-items-end justify-content-center"
-    >
-      <div class="mt-3">
-        <label for="txtUsuario" class="mx-3">Usuario</label
-        ><input type="text" name="txtUsuario" id="txtUsuario" />
-      </div>
-      <div class="mt-3">
-        <label for="txtPassword" class="mx-3">Password</label
-        ><input type="password" name="txtPassword" id="txtPassword" />
-      </div>
-      <div class="mt-3">
-        <span>¿No tienes usuario? <a href="">Registrarme!</a></span>
+    <span class="background"></span>
+    <header class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="../assets/logo.png" alt="Logo" width="60%" />
+        </a>
+
+        <div class="navbar-nav">
+          <a href="../index.html"
+            ><button class="btn button text-white fs-4 font-weight">
+              Inicio
+            </button></a
+          >
+          <button class="btn button text-white fs-4 font-weight btn-active">
+            Registro
+          </button>
+          <button class="btn button text-white fs-4 font-weight">
+            Reserva
+          </button>
+          <button class="btn button text-white fs-4 font-weight">
+            Recarga
+          </button>
+          <button class="btn button text-white fs-4 font-weight">
+            Contacto
+          </button>
+          <a href="../html/login.html"
+            ><button class="button fs-4 font-weight btn-primary">
+              Iniciar sesión
+            </button></a
+          >
+        </div>
       </div>
     </header>
-    <hr />
-    <div class="container">
-      <h1 class="text-center">Registro Usuario</h1>
-      <div
-        class="container d-flex flex-column align-items-start justify-content-center"
-      >
-        <div class="mt-3">
-          <label for="txtCédula" class="mx-3">Cédula</label
-          ><input type="number" name="txtCédula" id="txtCédula" />
-        </div>
-        <div class="mt-3">
-          <label for="txtNombres" class="mx-3">Nombres</label
-          ><input type="text" name="txtNombres" id="txtNombres" />
-        </div>
-        <div class="mt-3">
-          <label for="txtApellidos" class="mx-3">Apellidos</label
-          ><input type="text" name="txtApellidos" id="txtApellidos" />
-        </div>
-        <div class="mt-3">
-          <label for="txtDirección" class="mx-3">Dirección</label
-          ><input type="text" name="txtDirección" id="txtDirección" />
-        </div>
-        <div class="mt-3">
-          <label for="txtTeléfono" class="mx-3">Teléfono</label
-          ><input type="tel" name="txtTeléfono" id="txtTeléfono" />
-        </div>
-        <div class="mt-3">
-          <label for="txtCorreoElectronico" class="mx-3"
-            >Correo Electrónico</label
-          ><input
-            type="email"
-            name="txtCorreo Electrónico"
-            id="txtCorreoElectronico"
-          />
-        </div>
-        <div class="mt-3">
-          <label for="txtFecha Nacimiento" class="mx-3">Fecha Nacimiento</label
-          ><input
-            type="date"
-            name="txtFecha Nacimiento"
-            id="txtFecha Nacimiento"
-          />
-        </div>
-        <div class="mt-3">
-          <input
-            type="submit"
-            name="txtCancelar"
-            id="txtCancelar"
-            value="Cancelar"
-          />
-          <input
-            type="submit"
-            name="txtGuardar"
-            id="txtGuardar"
-            value="Guardar"
-          />
-        </div>
-      </div>
-    </div>
+    <main class="mt-5">
+      <section>
+        <h1 class="text-white text-center">¡Registro Usuario!</h1>
+      </section>
+    </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
