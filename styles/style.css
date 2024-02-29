@@ -20,6 +20,12 @@ h1 {
   font-style: normal !important;
 }
 
+.button-login {
+  font-family: "Anta", sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+}
+
 .background {
   background: linear-gradient(
     106.89deg,
@@ -138,4 +144,10 @@ a {
 
 .ocupada {
   display: block;
+}
+
+@media only screen and (max-width: 600px) {
+  .button-login {
+    font-size: 0.8rem !important;
+  }
 }
