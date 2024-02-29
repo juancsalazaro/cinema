@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cinema - Registro</title>
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/style-login.css" />
+    <script src="../js/app.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <span class="background"></span>
+    <header class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="../assets/logo.png" alt="Logo" width="60%" />
+        </a>
+
+        <div class="navbar-nav">
+          <a href="../index.html"
+            ><button class="btn button text-white fs-4 font-weight">
+              Inicio
+            </button></a
+          >
+          <a href="../html/registro.html"
+            ><button class="btn button text-white fs-4 font-weight">
+              Registro
+            </button></a
+          >
+          <button class="btn button text-white fs-4 font-weight btn-active">
+            Reserva
+          </button>
+          <button class="btn button text-white fs-4 font-weight">
+            Recarga
+          </button>
+          <button class="btn button text-white fs-4 font-weight">
+            Contacto
+          </button>
+          <a href="../html/login.html"
+            ><button class="button fs-4 font-weight btn-primary">
+              Iniciar sesión
+            </button></a
+          >
+        </div>
+      </div>
+    </header>
+    <main class="d-flex justify-content-center">
+      <div class="container-login mt-5">
+        <div class="heading">Reserva Cinema</div>
+        <form action="" class="form">
+          <select id="complejo" name="complejo" class="input">
+            <option value="" disabled selected>Selecciona tu ciudad</option>
+            <option value="masculino">Manizales</option>
+            <option value="femenino">Medellin</option>
+            <option value="otro">Pereira</option>
+          </select>
+          <input
+            required=""
+            class="input"
+            type="datetime-local"
+            name="FechaReserva"
+            id="FechaReserva"
+            placeholder="Fecha Reserva"
+          />
+          <div class="sala-cine m-5">
+            <img
+              src="../assets/libre.png"
+              alt="Silla disponible"
+              class="silla disponible"
+              onclick="cambiarEstado(this)"
+            />
+            <img
+              src="../assets/ocupada.png"
+              alt="Silla ocupada"
+              class="silla ocupada"
+              onclick="cambiarEstado(this)"
+            />
+            <img
+              src="../assets/libre.png"
+              alt="Silla disponible"
+              class="silla disponible"
+              onclick="cambiarEstado(this)"
+            />
+            <img
+              src="../assets/ocupada.png"
+              alt="Silla ocupada"
+              class="silla ocupada"
+              onclick="cambiarEstado(this)"
+            />
+            <img
+              src="../assets/libre.png"
+              alt="Silla disponible"
+              class="silla disponible"
+              onclick="cambiarEstado(this)"
+            />
+            <img
+              src="../assets/ocupada.png"
+              alt="Silla ocupada"
+              class="silla ocupada"
+              onclick="cambiarEstado(this)"
+            />
+            <img
+              src="../assets/libre.png"
+              alt="Silla disponible"
+              class="silla disponible"
+              onclick="cambiarEstado(this)"
+            />
+            <img
+              src="../assets/ocupada.png"
+              alt="Silla ocupada"
+              class="silla ocupada"
+              onclick="cambiarEstado(this)"
+            />
+            <img
+              src="../assets/libre.png"
+              alt="Silla disponible"
+              class="silla disponible"
+              onclick="cambiarEstado(this)"
+            />
+            <img
+              src="../assets/ocupada.png"
+              alt="Silla ocupada"
+              class="silla ocupada"
+              onclick="cambiarEstado(this)"
+            />
+            <img
+              src="../assets/libre.png"
+              alt="Silla disponible"
+              class="silla disponible"
+              onclick="cambiarEstado(this)"
+            />
+            <img
+              src="../assets/ocupada.png"
+              alt="Silla ocupada"
+              class="silla ocupada"
+              onclick="cambiarEstado(this)"
+            />
+            <img
+              src="../assets/libre.png"
+              alt="Silla disponible"
+              class="silla disponible"
+              onclick="cambiarEstado(this)"
+            />
+            <img
+              src="../assets/ocupada.png"
+              alt="Silla ocupada"
+              class="silla ocupada"
+              onclick="cambiarEstado(this)"
+            />
+            <img
+              src="../assets/libre.png"
+              alt="Silla disponible"
+              class="silla disponible"
+              onclick="cambiarEstado(this)"
+            />
+            <img
+              src="../assets/ocupada.png"
+              alt="Silla ocupada"
+              class="silla ocupada"
+              onclick="cambiarEstado(this)"
+            />
+            <img
+              src="../assets/libre.png"
+              alt="Silla disponible"
+              class="silla disponible"
+              onclick="cambiarEstado(this)"
+            />
+            <img
+              src="../assets/ocupada.png"
+              alt="Silla ocupada"
+              class="silla ocupada"
+              onclick="cambiarEstado(this)"
+            />
+            <img
+              src="../assets/libre.png"
+              alt="Silla disponible"
+              class="silla disponible"
+              onclick="cambiarEstado(this)"
+            />
+            <img
+              src="../assets/ocupada.png"
+              alt="Silla ocupada"
+              class="silla ocupada"
+              onclick="cambiarEstado(this)"
+            />
+          </div>
+          <input class="login-button" type="submit" value="Ver Cartelera" />
+        </form>
+        <span class="agreement"><a href="#"></a></span>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

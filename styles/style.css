@@ -118,3 +118,24 @@ a {
     opacity: 0.2;
   }
 }
+
+.sala-cine {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.silla {
+  width: 50px;
+  height: 50px;
+  margin: 10px 10px;
+  cursor: pointer;
+}
+
+.disponible {
+  display: block;
+}
+
+.ocupada {
+  display: block;
+}
