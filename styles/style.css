@@ -151,3 +151,71 @@ a {
     font-size: 1.2em !important;
   }
 }
+
+.menu-btn {
+  display: block;
+  position: relative;
+  width: 40px;
+  height: 4px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(45deg, #6ef96ecc 0%, #00dd00cc 100%);
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  cursor: pointer;
+}
+
+.menu-btn:hover:not(.open) {
+  width: 30px;
+}
+
+.menu-btn:hover:before,
+.menu-btn:hover:after {
+  width: 40px;
+}
+
+.menu-btn:before,
+.menu-btn:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 4px;
+  left: 0;
+  background: linear-gradient(45deg, #6ef96ecc 0%, #00dd00cc 100%);
+  transition: all 0.5s;
+}
+
+.menu-btn:before {
+  top: -12px;
+}
+
+.menu-btn:after {
+  top: 12px;
+}
+
+.menu-btn.open {
+  transform: translate(-50%, -50%) rotate(225deg);
+}
+
+.menu-btn.open:before,
+.menu-btn.open:after {
+  top: 0px;
+}
+
+.menu-btn.open:after {
+  transform: rotate(90deg);
+  width: 40px;
+}
+
+.navbar {
+  flex-wrap: nowrap !important;
+}
+
+.navbar-toggler.collapsed:focus {
+  color: transparent;
+}
+
+#navbar-cell {
+  display: none;
+}

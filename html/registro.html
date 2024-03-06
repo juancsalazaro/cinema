@@ -25,8 +25,22 @@
         <a class="navbar-brand" href="#">
           <img src="../assets/logo.png" alt="Logo" width="60%" />
         </a>
-
-        <div class="navbar-nav">
+        <button
+          class="navbar-toggler collapsed border-0"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavRegistro"
+          aria-controls="navbarNavRegistro"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          onclick="toggleElemento()"
+        >
+          <span class="menu-btn border-0"></span>
+        </button>
+        <div
+          class="navbar-nav navbar-collapse collapse border-0"
+          id="navbarNavRegistro"
+        >
           <a href="../index.html"
             ><button class="btn button text-white fs-4 font-weight">
               Inicio
@@ -54,6 +68,38 @@
         </div>
       </div>
     </header>
+    <div id="navbar-cell" class="container">
+      <div class="container">
+        <div class="navbar-nav">
+          <a href="../index.html"
+            ><button class="btn button text-white fs-4 font-weight w-100">
+              Inicio
+            </button></a
+          >
+          <button
+            class="btn button text-white fs-4 font-weight btn-active w-100"
+          >
+            Registro
+          </button>
+          <a href="../html/reserva.html"
+            ><button class="btn button text-white fs-4 font-weight w-100">
+              Reserva
+            </button></a
+          >
+          <button class="btn button text-white fs-4 font-weight w-100">
+            Recarga
+          </button>
+          <button class="btn button text-white fs-4 font-weight w-100">
+            Contacto
+          </button>
+          <a href="../html/login.html"
+            ><button class="button button-login font-weight btn-primary w-100">
+              Iniciar sesión
+            </button></a
+          >
+        </div>
+      </div>
+    </div>
     <main class="d-flex justify-content-center">
       <div class="container-login mt-5">
         <div class="heading">Registro Usuario</div>
@@ -135,5 +181,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="../js/app.js"></script>
   </body>
 </html>
