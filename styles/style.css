@@ -7,7 +7,11 @@ body {
   margin: 0;
   line-height: inherit;
 }
-
+.font {
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 h1 {
   font-family: "Anta", sans-serif;
   font-weight: 400;
@@ -286,3 +290,4 @@ a {
 .swiper-pagination-bullet-active {
   background-color: #6ef96ecc !important;
 }
+

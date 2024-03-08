@@ -17,6 +17,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="../styles/footer.css" />
   </head>
   <body>
     <span class="background"></span>
@@ -101,7 +102,7 @@
       </div>
     </div>
     <main class="d-flex justify-content-center">
-      <div class="container-login mt-5">
+      <div class="container-login mt-5" style="max-width: 35vw; width: 35vw">
         <div class="heading">Reserva Cinema</div>
         <form action="" class="form">
           <select id="complejo" name="complejo" class="input">
@@ -239,17 +240,52 @@
               class="silla ocupada"
               onclick="cambiarEstado(this)"
             />
+            <img
+              src="../assets/ocupada.png"
+              alt="Silla"
+              class="silla ocupada"
+              onclick="cambiarEstado(this)"
+            />
           </div>
           <input class="login-button" type="submit" value="Ver Cartelera" />
         </form>
         <span class="agreement"><a href="#"></a></span>
       </div>
     </main>
+    <footer>
+      <span class="font">© 2024 - JCS - CAMILO SALAZAR</span>
+      <div class="socialmedia">
+        <ul>
+          <li>
+            <a href="#"><i class="fab fa-facebook-f icon"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-linkedin-in icon"></i></a>
+          </li>
+          <li>
+            <a href="#"> <i class="fa-brands fa-tiktok icon"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-google-plus-g icon"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-x-twitter icon"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram icon"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
     <script src="../js/app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/15056a0550.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
