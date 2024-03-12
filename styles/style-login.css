@@ -52,7 +52,7 @@ main {
 
 .form .input:focus {
   outline: none;
-  border-inline: 2px solid #E66EF9;
+  border-inline: 2px solid #e66ef9;
 }
 
 .form .forgot-password {
@@ -150,6 +150,18 @@ main {
 
 .agreement a {
   text-decoration: none;
-  color: #E66EF9;
+  color: #e66ef9;
   font-size: 9px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container-login {
+    max-width: initial !important;
+    width: 90% !important;
+    padding: 25px 25px !important;
+  }
+
+  .form .d-flex {
+    display: block !important;
+  }
 }

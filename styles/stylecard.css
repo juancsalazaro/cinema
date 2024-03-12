@@ -213,3 +213,31 @@
     --end: black;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .card {
+    margin: 15% 0%;
+    width: 70vmin;
+    padding: 5vmin;
+  }
+
+  .description {
+    font-size: 8vmin;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .card {
+    margin: 5% 10%;
+    width: 40vmin;
+    padding: 2vmin;
+  }
+
+  .movies {
+    justify-content: space-between;
+  }
+
+  .description {
+    font-size: 3vmin;
+  }
+}
